@@ -1,0 +1,44 @@
+.printbill-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.printbill-page input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.products-section {
+  margin-top: 20px;
+}
+
+.product-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.product-inputs input {
+  flex: 1;
+}
+
+.generate-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.generate-btn:hover {
+  background-color: #0066cc;
+}

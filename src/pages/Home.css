@@ -1,0 +1,58 @@
+/* === src/pages/Home.css === */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #555;
+}
+
+.partners {
+  margin-top: 2rem;
+}
+
+.partners h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logos img:hover {
+  filter: grayscale(0%);
+}
