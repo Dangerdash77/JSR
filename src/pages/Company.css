@@ -1,28 +1,11 @@
-.company-navbar {
+.container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #004080;
-  padding: 10px 20px;
-  color: white;
-}
-
-.company-logo {
-  height: 40px;
-}
-
-.company-nav-buttons a {
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.company-nav-buttons a:hover {
-  text-decoration: underline;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .company-content {
+  flex: 1;
   padding: 30px;
   text-align: center;
 }

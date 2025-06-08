@@ -1,29 +1,20 @@
-// src/pages/CompanyUpdate.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from './components/Footer';
 import './Company.css';
 import companyLogo from './assets/image.png'; // placeholder logo image
-import Footer from './components/Footer.jsx';
+import Navbar1 from './components/Navbar1';
 
 const CompanyUpdate = () => {
   return (
-    <div className="company-update">
-      <nav className="company-navbar">
-        <img src={companyLogo} alt="Company Logo" className="company-logo" />
-        <div className="company-nav-buttons">
-          <Link to="/inventory">Inventory</Link>
-          <Link to="/printbill">Print Bill</Link>
-          <Link to="/company">Company</Link>
-          <Link to="/login">Logout</Link>
-        </div>
-      </nav>
-
+    <div className="container">
+      <Navbar1 />
       <main className="company-content">
         <h1>Company Update</h1>
         <p>Welcome to your company update dashboard. Here you can manage all company-specific settings and information.</p>
+        <h3>Comming Soon</h3>
       </main>
-
-      <Footer company="Your Company Name" />
+      <Footer />
     </div>
   );
 };

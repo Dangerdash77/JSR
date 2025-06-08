@@ -1,9 +1,9 @@
-// src/pages/Inventory.js
 import React, { useState } from 'react';
 import './Inventory.css';
 import { Link } from 'react-router-dom';
 import companyLogo from './assets/image.png';
 import Footer from './components/Footer';
+import Navbar1 from './components/Navbar1';
 
 const Inventory = () => {
   const [products, setProducts] = useState([]);
@@ -23,17 +23,9 @@ const Inventory = () => {
   };
 
   return (
+    <div className="container">
+      <Navbar1 />
     <div className="inventory-page">
-      <nav className="company-navbar">
-        <img src={companyLogo} alt="Company Logo" className="company-logo" />
-        <div className="company-nav-buttons">
-          <Link to="/inventory">Inventory</Link>
-          <Link to="/printbill">Print Bill</Link>
-          <Link to="/company">Company</Link>
-          <Link to="/login">Logout</Link>
-        </div>
-      </nav>
-
       <h2>Inventory Management</h2>
       <div className="input-group">
         <input
@@ -66,6 +58,7 @@ const Inventory = () => {
           </div>
         ))}
       </div>
+    </div>
       <Footer />
     </div>
   );
